@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
   <meta charset="UTF-8">
+  <!-- เพิ่มแท็ก Viewport เพื่อบังคับให้แสดงผลสเกลมือถือตามจริง -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Chote Weerakul | E-Portfolio</title> 
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     html, body {
       margin: 0;
       padding: 0;
@@ -18,14 +24,18 @@
       position: fixed;
       top: 0;
       left: 0;
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
+      height: 100%;
+      height: 100dvh; /* ป้องกันปัญหาแถบที่อยู่บนมือถือยืดหดแล้ว iframe กระตุก */
       border: none;
     }
   </style>
 </head>
 
 <body>
-  <iframe src="https://script.google.com/macros/s/AKfycbxzKF0IntoqrQvXtsC4JIpkl3Ll7u2ksnVK1wn2-6cd6-CKJTn3jGtBBGtRzVUdSLXH9Q/exec"></iframe>
+  <iframe 
+    src="https://script.google.com/macros/s/AKfycbxzKF0IntoqrQvXtsC4JIpkl3Ll7u2ksnVK1wn2-6cd6-CKJTn3jGtBBGtRzVUdSLXH9Q/exec"
+    allow="fullscreen"
+  ></iframe>
 </body>
 </html>
